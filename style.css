@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(255, 192, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: rgb(124, 0, 68);
+}
+
+.resizeBtn {
+    background-color: rgb(124, 0, 68);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 640px;
+    max-width: 640px;
+    min-height: 640px;
+    max-height: 640px;
+}
+
+.gridDiv {
+    border: 1px solid black;
+}

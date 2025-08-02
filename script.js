@@ -7,6 +7,9 @@ function createDiv(size) {
         const divSize = (640 / size) - (4);
         div.style.cssText = `min-width: ${divSize}px; min-height: ${divSize}px;`;
         container.appendChild(div);
+        div.addEventListener("mouseenter", () => {
+            div.style.backgroundColor = "maroon";
+        });
     }
 }
 

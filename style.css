@@ -10,7 +10,7 @@ body {
     color: rgb(124, 0, 68);
 }
 
-.resizeBtn {
+#resizeBtn {
     background-color: rgb(124, 0, 68);
     color: white;
     font-weight: bold;
@@ -21,12 +21,11 @@ body {
 #container {
     display: flex;
     flex-wrap: wrap;
-    min-width: 640px;
-    max-width: 640px;
-    min-height: 640px;
-    max-height: 640px;
+    width: 640px;
+    aspect-ratio: 1 / 1;
 }
 
 .gridDiv {
     border: 1px solid black;
+    box-sizing: border-box;
 }

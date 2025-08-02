@@ -9,8 +9,13 @@ function createDiv(size) {
         div.style.width = `${640 / size}px`;
         div.style.height = `${640 / size}px`;
         container.appendChild(div);
+        const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+        const r = randomBetween(0, 255);
+        const g = randomBetween(0, 255);
+        const b = randomBetween(0, 255);
+        const rgb = `rgb(${r},${g},${b})`;
         div.addEventListener("mouseenter", () => {
-            div.style.backgroundColor = "maroon";
+            div.style.backgroundColor = rgb;
         });
     }
 }
